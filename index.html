@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT card component</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="nft-card">
+      <div class="image-content">
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="equilibrium"
+          class="main-image"
+        />
+        <div class="image-overlay">
+          <!--its important to create new div for view-icon,we will need it for styling and creating hovering effect later-->
+          <img
+            class="view-icon"
+            src="images/icon-view.svg"
+            alt="icon of view"
+          />
+        </div>
+      </div>
+      <article>
+        <h1 class="model-name">Equilibrium #3429</h1>
+        <p class="description">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </article>
+      <aside>
+        <!--we are creating this div so then we can have shared space for 4 elements that we will turn into absolute,inline-block elements,that will give us ability to position our elements precisely-->
+        <img src="images/icon-ethereum.svg" alt="ethereum" class="ethereum" />
+        <p class="price">0.041 ETH</p>
+        <img class="clock" src="images/icon-clock.svg" alt="clock" />
+        <p class="time-left">3 days left</p>
+      </aside>
+      <div class="line"></div>
+      <footer>
+        <!--we are creating this div so then we can have shared space for 4 elements that we will turn into absolute,inline-block elements,that will give us ability to position our elements precisely-->
+        <img src="images/image-avatar.png" alt="avatar" class="avatar" />
+        <p class="creation">Creation of</p>
+        <p class="creator">Jules Wyvern</p>
+      </footer>
+    </main>
+  </body>
+</html>
